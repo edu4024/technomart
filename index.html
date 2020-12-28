@@ -17,27 +17,37 @@
 
   <section class="header-menu">
     <div class="header-menu-wrapper">
-      <a class="header-logo">
-        <!-- <img src="./assets/img/logo.jpg" alt="Логотип" width="220" height="47"> -->
-        <img src="./assets/img/logo-technomart.png" alt="Логотип" width="108" height="18">
-      </a>
-      <a href="#">
-        <img src="./assets/svg/icon-search.svg" alt="Поиск" width="17" height="17">
-        <input type="text" placeholder="Поиск">
-      </a>
-      <a href="#">
-        <img src="./assets/svg/icon-bookmark.svg" alt="Закладки" width="17" height="77">
-        <span>Закладки: 0</span>
-      </a>
-      <a href="#">
-        <img src="./assets/svg/icon-cart.svg" alt="Корзина" width="27" height="27">
-        <span>Корзина: 0</span>
-      </a>
-      <div class="header-menu-order">
-        <a href="#">
-          <span>Оформить заказ</span>
-        </a>
-      </div>
+      <ul class="header-menu-list">
+        <li class="header-logo">
+          <a>
+            <!-- <img src="./assets/img/logo.jpg" alt="Логотип" width="220" height="47"> -->
+            <img src="./assets/img/logo-technomart.png" alt="Логотип" width="108" height="18">
+          </a>
+        </li>
+        <li class="header-menu-item">
+          <a class="img-link" href="#">
+            <img src="./assets/svg/icon-search.svg" alt="Поиск" width="17" height="17">
+            <input type="text" placeholder="Поиск">
+          </a>
+        </li>
+        <li class="header-menu-item">
+          <a class="img-link" href="#">
+            <img src="./assets/svg/icon-bookmark.svg" alt="Закладки" width="17" height="77">
+            Закладки: 0
+          </a>
+        </li>
+        <li class="header-menu-item">
+          <a class="img-link" href="#">
+            <img src="./assets/svg/icon-cart.svg" alt="Корзина" width="27" height="27">
+            Корзина: 0
+          </a>
+        </li>
+        <li class="header-menu-order">
+          <a href="#">
+            Оформить заказ
+          </a>
+        </li>
+      </ul>
     </div>
   </section>
 
@@ -89,12 +99,14 @@
       <li><a href="#"><img src="./assets/img/materials.jpg" alt="materials" width="300" height="123"></a></li>
       <li><a href="#"><img src="./assets/img/tools.jpg" alt="tools" width="300" height="123"></a></li>
       <li><a href="#"><img src="./assets/img/tech.jpg" alt="tech" width="300" height="123"></a></li>
-      <li>
-        <a href="#"><img src="./assets/img/punchers.jpg" alt="punchers" width="620" height="266"></a>
-        <a class="button" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+      <li class="feature-puncher-carusel">
+        <div>
+          <a href="#"><img src="./assets/img/punchers.jpg" alt="punchers" width="620" height="266"></a>
+          <a class="feature-puncher-carusel-btn button" href="#">ОТКРЫТЬ КАТАЛОГ</a>
+        </div>
       </li>
-      <li><a href="#"><img src="./assets/img/discount.jpg" alt="discount" width="300" height="123"></a></li>
-      <li><a href="#"><img src="./assets/img/delivery.jpg" alt="delivery" width="300" height="123"></a></li>
+      <li  class="feature-discount"><a href="#"><img src="./assets/img/discount.jpg" alt="discount" width="300" height="123"></a></li>
+      <li class="feature-delivery"><a href="#"><img src="./assets/img/delivery.jpg" alt="delivery" width="300" height="123"></a></li>
     </ul>
   </section>
 
@@ -104,23 +116,31 @@
       <a class="button" href="#">все популярные товары</a>
     </div>
     <ul class="popular-goods-list">
-      <li>
-        <a href="#"><img src="./assets/img/punchers/BFG900.jpg" alt="BFG900" width="184" height="164"></a>
-        <button type="button">25500 Р.</button>
+      <li class="popular-goods-item">
+        <a class="popular-goods-img-puncher" href="#"><img src="./assets/img/punchers/BFG900.jpg" alt="BFG900" width="184" height="164"></a>
+        <b>Перфоратор BOSCHBFG 9000</b>
+        <del>32500 Р.</del><br>
+        <button class="button" type="button">25500 Р.</button>
       </li>
-      <li>
-        <img src="./assets/img/new.png" alt="new">
-        <a href="#"><img src="./assets/img/punchers/BFG3000.jpg" alt="BFG3000" width="127" height="112"></a>
-        <button type="button">15500 Р.</button>
+      <li class="popular-goods-item">
+        <a class="popular-goods-img-puncher" href="#"><img src="./assets/img/punchers/BFG3000.jpg" alt="BFG3000" width="127" height="112"></a>
+        <img class="popular-goods-img-new" src="./assets/img/new.png" alt="new">
+        <b>Перфоратор BOSCHBFG 3000</b>
+        <del>22500 Р.</del><br>
+        <button class="button" type="button">15500 Р.</button>
       </li>
-      <li>
-        <a href="#"><img src="./assets/img/punchers/BFG6000.jpg" alt="BFG6000" width="144" height="128"></a>
-        <button type="button">25500 Р.</button>
+      <li class="popular-goods-item">
+        <a class="popular-goods-img-puncher" href="#"><img src="./assets/img/punchers/BFG6000.jpg" alt="BFG6000" width="144" height="128"></a>
+        <b>Перфоратор BOSCHBFG 6000</b>
+        <del>30500 Р.</del><br>
+        <button class="button" type="button">25500 Р.</button>
       </li>
-      <li>
-        <img src="./assets/img/new.png" alt="new">
-        <a href="#"><img src="./assets/img/punchers/BFG2000.jpg" alt="BFG2000" width="127" height="112"></a>
-        <button type="button">12500 Р.</button>
+      <li class="popular-goods-item">
+        <a class="popular-goods-img-puncher" href="#"><img src="./assets/img/punchers/BFG2000.jpg" alt="BFG2000" width="127" height="112"></a>
+        <img class="popular-goods-img-new" src="./assets/img/new.png" alt="new">
+        <b>Перфоратор BOSCHBFG 2000</b>
+        <del>22500 Р.</del><br>
+        <button class="button" type="button">12500 Р.</button>
       </li>
     </ul>
   </section>
